@@ -1,4 +1,0 @@
-2025-04-14 08:54:47,363 - drone_simulator.server - INFO [server.py:20] - Initializing DroneSimulatorServer on 0.0.0.0:8765
-2025-04-14 08:54:47,368 - drone_simulator.server - INFO [server.py:323] - Starting WebSocket server on 0.0.0.0:8765
-2025-04-14 08:54:47,427 - drone_simulator.server - INFO [server.py:335] - Server started successfully on ws://0.0.0.0:8765
-2025-04-14 08:54:47,429 - drone_simulator.server - INFO [server.py:336] - Waiting for connections...
