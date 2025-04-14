@@ -1,0 +1,5 @@
+2025-04-14 08:54:47,355 - drone_simulator.run_server - INFO [run_server.py:34] - Starting Drone Simulator Server on 0.0.0.0:8765
+2025-04-14 08:54:47,357 - drone_simulator.run_server - INFO [run_server.py:35] - Admin server will run on 0.0.0.0:8766
+2025-04-14 08:54:47,358 - drone_simulator.run_server - INFO [run_server.py:36] - Process ID: 31912
+2025-04-14 08:54:47,359 - drone_simulator.run_server - INFO [run_server.py:37] - Python version: 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]
+2025-04-14 08:54:47,360 - drone_simulator.run_server - INFO [run_server.py:38] - Current directory: C:\Users\saman\Downloads\Drone_Simulation\Software_R2
