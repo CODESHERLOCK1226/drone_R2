@@ -96,28 +96,28 @@ async def control_drone():
                         print(controller._format_data("SENT COMMANDS", commands))
                         
                     except asyncio.TimeoutError:
-                        print("\n⚠️  Connection timeout - reconnecting...")
+                        print("\n Connection timeout - reconnecting...")
                         break
                     except json.JSONDecodeError:
-                        print("\n⚠️  Invalid JSON data received")
+                        print("\n  Invalid JSON data received")
                         continue
                         
         except (websockets.exceptions.ConnectionClosed, 
                websockets.exceptions.ConnectionClosedError) as e:
-            print(f"\n⚠️  Connection error: {e}")
+            print(f"\n⚠  Connection error: {e}")
             retry_count += 1
             await asyncio.sleep(controller.retry_delay)
         except Exception as e:
-            print(f"\n⚠️  Unexpected error: {e}")
+            print(f"\n  Unexpected error: {e}")
             retry_count += 1
             await asyncio.sleep(controller.retry_delay)
 
-    print("\n❌ Max connection attempts reached. Shutting down.")
+    print("\n Max connection attempts reached. Shutting down.")
 
 if __name__ == "__main__":
     try:
         asyncio.run(control_drone())
     except KeyboardInterrupt:
-        print("\n🛑 Controller stopped by user")
+        print("\n Controller stopped by user")
     except Exception as e:
-        print(f"\n❌ Fatal error: {e}")
+        print(f"\n Fatal error: {e}")
